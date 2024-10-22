@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo2.svg">
+    <script src="./assets/script/index.js" defer></script>
+    <title class="home_title">Title</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="titolo">
+                <div class="logo">
+                    <img #id="logo-img" src="./assets/img/logo2.svg" alt="logo">
+                </div>
+                <h1 class="home_title">Name Surname</h1>
+            </div>
+            <div class="menu">
+                <img src="./assets/img/hamburger-menu.svg" alt="menu">
+            </div>
+            <ul class="menu-list">
+                <li id="homeButton">Home</li>
+                <li id="aboutButton">About</li>
+                <li id="contactButton">Contact</li>
+                <li id="workButton">Project</li>
+            </ul>
+        </div>
+        <nav class="menu-link hide">
+            <ul>
+                <li id="homeButton">Home</li>
+                <li id="aboutButton">About</li>
+                <li id="contactButton">Contact</li>
+                <li id="workButton">Project</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1>Hi! I'm <span class="home_title">Name Surname</span></h1>
+                <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tenetur hic
+                    enim quos in
+                    mollitia.</p>
+            </div>
+        </section>
+        <section class="about-me" id="about">
+            <h2>A little about me</h2>
+            <div class="profile-image">
+                <img src="./assets/img/logo2.svg" alt="photo">
+            </div>
+            <p>Hey! My name is Brittany and I'm a web developer with a passion for front end development and design. I'm
+                currently a third year student at Northeastern University pursuing a degree in information science with
+                a minor in interaction design. I aspire toward a career that will allow me to channel my creativity
+                through crafting beautiful software and engaging experiences. </p>
+            <p>When I'm not on the computer, I enjoy snowboarding, swimming, and flying with drones. </p>
+            <div class="self-proclamation">
+                <h3>Self Proclamation</h3>
+                <div class="self-proclamation-object">
+                    <img src="./assets/img/web-developer.svg">
+                    <p>Web developer</p>
+                </div>
+                <div class="self-proclamation-object">
+                    <img src="./assets/img/ux-uui.svg">
+                    <p>UX Enthusiast</p>
+                </div>
+                <div class="self-proclamation-object">
+                    <img src="./assets/img/svg/drone-8-svgrepo-com.svg">
+                    <p>Flyer</p>
+                </div>
+            </div>
+        </section>
+        <section class="passion" id="passion">
+            <h2>Passion</h2>
+            <div class="passion-object-container">
+                <div class="passion-object">
+                    <h3>Design</h3>
+                    <div class="passion-img"><img src="./assets/img/laptop.svg"></div>
+                    <p>Design isn't just what a product looks like and feels like on the outside. Design encompasses the
+                        internal functionality of a product as well as the overall user experience. I strive to design
+                        interfaces and experiences that people can enjoy on all digital mediums. </p>
+                </div>
+                <div class="passion-object">
+                    <h3>Development</h3>
+                    <div class="passion-img"><img src="./assets/img/bracket-coding.svg"></div>
+                    <p>With a strong foundation in computer science, I'm passionate about web design and development,
+                        and interested in mobile app development. As I grow as a developer, I hope to write clean,
+                        readable code that can be used by others and leveraged to create beautiful software.</p>
+                </div>
+                <div class="passion-object">
+                    <h3>Involvement</h3>
+                    <div class="passion-img"><img src="./assets/img/rota-dentata.svg"></div>
+                    <p>At Northeastern, I'm currently the web chair for nuWiT (NU Women in Tech) as well as a Teaching
+                        Assistant for the undergrad HCI course. Previously, I've been involved with the club water polo
+                        team, the resident student association, and the ski and snowboard club.</p>
+                </div>
+            </div>
+        </section>
+        <section class="experience" id="experience">
+            <h2>Experience</h2>
+            <p>I've been doing web development for about 3 years now, and I'm always eager to learn more in this fast
+                paced industry.</p>
+            <h3>Some technologies I've worked with:</h3>
+            <div class="experience-object-container">
+                <div class="experience-object"><img src="./assets/img/html-5-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/css-3-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/javascript-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/node-js-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/angular-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/java-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/mongo-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/python-svgrepo-com.svg"></div>
+                <div class="experience-object"><img src="./assets/img/linux-svgrepo-com.svg"></div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <form class="contact-container">
+                <h2>Contact me</h2>
+                <div class="form-input">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-input">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" required email>
+                </div>
+                <div class="form-input">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" required></textarea>
+                </div>
+                <button type="submit" value="Send">Send</button>
+            </form>
+        </section>
+        <section class="work" id="work">
+            <h2>What I've done</h2>
+            <h4>(more coming soon)</h4>
+            <a class="work-object work-object-1 project-element-card bk1">
+                <div class="magnifier-logo">
+                    <img src="./assets/img/magnifying-glass.svg">
+                </div>
+                <h3 class="work-title">Work 1</h3>
+            </a>
+            <a class="work-object work-object-1 project-element-card bk2">
+                <div class="magnifier-logo">
+                    <img src="./assets/img/magnifying-glass.svg">
+                </div>
+                <h3 class="work-title">Work 2</h3>
+            </a>
+            <a class="work-object work-object-1 project-element-card bk3">
+                <div class="magnifier-logo">
+                    <img src="./assets/img/magnifying-glass.svg">
+                </div>
+                <h3 class="work-title">Work 3</h3>
+            </a>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>Copyright © 2024 Name Surname. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

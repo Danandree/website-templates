@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: rgb(113, 123, 215);
+    --color2: rgb(168, 172, 211);
+    --color2-sfumato: rgb(168, 172, 211, 0.5);
+    --color3: rgb(90, 96, 120);
+    --background-color: rgb(255, 255, 255, 0.7);
+    --button-color: var(--color1);
+    --menu-color: var(--color3);
+    --header-color: var(--color2);
+    --footer-color: var(--color2);
+    --form-container-color: var(--color2-sfumato);
+    --button-text-color: var(--background-color);
+    --card-color: var(--color2-sfumato);
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+h2,
+label,
+input,
+textarea,
+.form-container button {
+    font-size: 1.1rem;
+}
+
+html {
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex {
+    display: flex;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-90 {
+    width: 90%;
+    margin: auto;
+}
+
+.f-center {
+    align-items: center;
+    justify-content: center;
+}
+
+#profile-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+}
+
+.header_menu {
+    cursor: pointer;
+}
+
+.header_content {
+    background-color: var(--header-color);
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.header_logo {
+    background-color: var(--header-color);
+    width: fit-content;
+    height: 100%;
+    cursor: pointer;
+}
+
+.logo-container {
+    background-color: var(--header-color);
+    height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.logo_img {
+    height: 30px;
+    aspect-ratio: 1 / 1;
+}
+
+.logo_text {
+    align-items: center;
+    justify-content: start;
+}
+
+.menu_content {
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    border: solid 2px var(--header-color);
+}
+
+.menu_list {
+    list-style: none;
+}
+
+.menu_list>li {
+    padding: 15px 0;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.menu_list li:hover {
+    background-color: white;
+}
+
+li,
+a {
+    text-decoration: none;
+}
+
+.button_design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-color);
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px grey;
+    text-decoration: none;
+    color: var(--button-text-color);
+}
+
+.main-container {
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.separate-line {
+    width: 50px;
+    height: 5px;
+    background-color: var(--button-color);
+    margin: auto;
+}
+
+.content-container p h2 {
+    text-align: center;
+}
+
+.main-container p {
+    text-align: center;
+}
+
+.about-container {
+    gap: 25px;
+}
+
+.about-p {
+    gap: 10px;
+}
+
+.about-p p {
+    text-align: left;
+}
+
+.hide {
+    display: none;
+}
+
+.about-my-skills {
+    top: 0px;
+    text-align: center;
+    gap: 15px;
+    margin-top: 0px;
+}
+
+.about-main {
+    gap: 15px;
+}
+
+.about-main>.button_design {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.skills {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: auto;
+}
+
+.skills-object {
+    width: fit-content;
+    padding: 15px;
+    background-color: var(--button-color);
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px grey;
+    color: var(--button-text-color);
+}
+
+.project-object {
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: var(--card-color);
+    border-radius: 10px;
+}
+
+.project-img {
+    width: 80%;
+    max-width: 500px;
+}
+
+.project-object-text {
+    gap: 10px;
+    width: 90%;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    padding: 10px;
+}
+
+.form-container {
+    gap: 10px;
+    border-radius: 15px;
+    background-color: var(--form-container-color);
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+}
+
+.form-element {
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.form-element>input,
+.form-element>textarea,
+.form-element>p {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px grey;
+    width: 95%;
+    margin: auto;
+    min-width: 95%;
+    max-width: 95%;
+}
+
+textarea {
+    height: 150px;
+}
+
+.form-buttons {
+    gap: 10px;
+}
+
+.header-menu-row {
+    display: none;
+}
+
+footer {
+
+    background-color: var(--footer-color);
+}
+
+.main-footer-container {
+    width: 95%;
+    margin: auto;
+    gap: 15px;
+}
+
+.main-footer-container>h3 {
+    color: white;
+    padding: 10px;
+}
+
+.footer-text {
+    color: white;
+    width: 100%;
+    margin: auto;
+}
+
+.footer-social {
+    gap: 10px;
+}
+
+.footer-social img {
+    width: 50px;
+    height: 50px;
+}
+
+#copyright {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#contact>.main-container {
+    max-width: 600px;
+}
+
+section {
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 790px) {
+    .header_menu {
+        display: none;
+    }
+
+    .header_logo {
+        gap: 20px;
+    }
+
+    .header-menu-row {
+        display: flex;
+        height: 100%;
+    }
+
+    .header_content {
+        justify-content: space-around;
+    }
+
+    .menu_list {
+        height: 100%;
+    }
+
+    .menu_list li {
+        border: 0px;
+        height: 100%;
+        padding: 0;
+    }
+
+    .menu_list li a {
+        height: 100%;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3,
+    a,
+    div {
+        font-size: 1.6rem;
+    }
+
+    p,
+    button {
+        font-size: 1.3rem;
+    }
+
+    .logo_img {
+        height: 90%;
+    }
+
+    .project-object {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .project-object:hover {
+        background-color: var(--header-color);
+    }
+
+    .about-container {
+        flex-direction: row;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        gap: 25px;
+    }
+
+    .about-main,
+    .about-my-skills {
+        width: 45%;
+        margin: auto;
+        height: 100%;
+    }
+
+    .about-my-skills {
+        margin-top: 0px;
+    }
+}
